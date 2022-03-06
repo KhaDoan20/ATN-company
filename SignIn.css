@@ -1,0 +1,29 @@
+.signInForm__heading{
+	display: inline;
+	justify-content: center;
+	padding-left: 21%;
+	font-size: 1.0rem;
+	font-weight: 600;
+	color: #4e3f38;
+	font-family: 'Rampart One', cursive; 
+	padding-bottom: 10px;
+}
+
+.signInForm__btn{
+display: inline-block;
+padding: .75rem 1.0rem;
+border-radius: 2rem;
+color: #4e3f38;
+text-transform: uppercase;
+font-size: 0.5rem;
+letter-spacing: .15rem;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+z-index: 1;
+margin-top: 1%;
+}
+
+.signInForm__btn:hover{
+	color: #FF6B6B;
+}
