@@ -6,7 +6,15 @@ function display_table($table,$role){
     $num_field = pg_num_fields($table);
     for ($i=0;$i<$num_field;$i++){
         $field_name = pg_field_name($table,$i);
-        echo "<th>$field_name</th>";
+        if ($field_name == 'shop_name')
+        echo "<th>Shop</th>";
+    else if ($field_name == 'product_id')
+        echo "<th>Product ID</th>";
+    else if ($field_name == 'product_name')
+        echo "<th>Product Name</th>";
+    else if ($field_name == 'price')
+        echo "<th>Price</th>";
+    else echo "<th>Amount</th>";
     }
     //echo "<th></th><th></th>";
     
