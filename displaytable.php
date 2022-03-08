@@ -5,14 +5,6 @@ session_start();
 $dbconn = pg_connect($db_conn_string);
 $role = $_SESSION["shopname"];
 
-// $page = $_SERVER['PHP_SELF'];
-//     if (isset($_POST["submit_time"])){
-//         $_SESSION["refresh"] = $_POST["refresh_time"];
-//     }
-//     else if (isset($_POST["selected_shop"])){
-//         $_SESSION["selected_shop"] = $_POST["shop"];
-//     }
-
 $page = $_SERVER['PHP_SELF'];
     
 if(isset($_POST["submit_time"]))
@@ -68,8 +60,8 @@ if(isset($_POST["selected_shop"]))
     
     <form class="dropform" action="" method="POST">
         <select class ="dropdown" name="shop">
-            <option value="Shop_a">Shop A</option>
-            <option value="Shop_b">Shop B</option>
+            <option value="shop_a">Shop A</option>
+            <option value="shop_b">Shop B</option>
             <option value="All" selected>All Shop</option>
         </select>
         <input class="button" type="submit" name="selected_shop" value="View" />
